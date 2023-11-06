@@ -19,6 +19,19 @@ class UserSeeder extends Seeder
             'name' => 'Saiful Bahri',
             'email' => 'superuser@gmail.com',
             'email_verified_at'  => now(),
+            'role' => 'admin',
+            'phone' => '628400876123',
+            'bio' => 'flutter dev',
+            'password' => Hash::make('123456'),
+   ]);
+
+        User::create([
+            'name' => 'alfio',
+            'email' => 'alfiooatmaja@gmail.com',
+            'email_verified_at'  => now(),
+            'role' => 'superadmin',
+            'phone' => '628400831900',
+            'bio' => 'flutter dev',
             'password' => Hash::make('123456'),
    ]);
 }
