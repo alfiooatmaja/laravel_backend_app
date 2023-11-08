@@ -60,7 +60,7 @@
                                             <tr>
                                             
                                                 <td>
-                                                    1{{$index + $user->firstItem() }}
+                                                    1{{$index + $users->firstItem() }}
                                                 </td>
                                                 <td>
                                                     {{$user->name}}

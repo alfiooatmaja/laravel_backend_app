@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class UserController extends Controller
 {
@@ -17,7 +18,7 @@ class UserController extends Controller
         ->when($request->input('search'), function($query, $search){
             $query->where('name', 'like', '%'.$search.'%');
         })->paginate(5);
-        return view('page.user.index',compact('users'));
+        return view('pages.user.index',compact('users'));
     }
 
     /**

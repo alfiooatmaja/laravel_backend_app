@@ -102,7 +102,7 @@
             </a>
             <div class="dropdown-menu dropdown-menu-right">
             
-                <a href="{{ route('profile-edit') }}"
+                <a href="{{ route('profile.edit') }}"
                     class="dropdown-item has-icon">
                     <i class="far fa-user"></i> Profile
                 </a>
